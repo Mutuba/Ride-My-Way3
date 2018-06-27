@@ -96,8 +96,11 @@ class UserRegistration(Resource):
 
 class UserSignin(Resource):
     """ User Signin Resource. User signs in if has an account """
+
     parser = reqparse.RequestParser()
+
     parser.add_argument('username', required=True, help="Username is required")
+
     parser.add_argument('password', required=True, help="Password is required")
 
     def post(self):
@@ -107,6 +110,7 @@ class UserSignin(Resource):
         password = args["password"]
 
         if validate_str_field(args["username"], 'Username'):
+            
             return validate_str_field(args["username"], 'Username')
 
         new_user = User()
@@ -115,8 +119,11 @@ class UserSignin(Resource):
         if not user:
             return {"message": f"{username} does not have an account."}, 404
         if not new_user.check_password_hash(username, password):
+
             return {"message": "username or password do not match."}, 403
+
         access_token = create_access_token(identity=user)
+
         return {"access_token": access_token}, 200
 
 # Adding resources to endpoints to enable api calls
