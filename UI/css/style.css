@@ -1,0 +1,418 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:90%;
+  margin:auto;
+  overflow:hidden;
+
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background: #00a1f1;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+  border-radius: 4px;
+}
+
+.button_2{
+  height:38px;
+  background:#4caf50;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+  border-radius: 4px;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:20px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 10px 0 10px;
+}
+
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:200px;
+  background-color: #00a1f1;
+  text-align:center;
+  color:#ffffff;
+  /*background-size: cover;*/
+}
+
+#showcase h1{
+  margin-top:40px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  width:250px;
+  height:25px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes #box1{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+#boxes #box2{
+  float:right;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:50px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+/* driver-sign-in */
+#driver-sign-in form{
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 80%;
+}
+
+#friends-page li{
+  display: inline;
+}
+#friends-page .friends2{
+  float: right;
+}
+/* Driver Dashboard */
+#driver-dashboard form{
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 80%;
+}
+
+#driver-sign-in .driver input{
+  width:80%;
+  padding:10px;
+}
+#driver-dashboard .dashboard input{
+  width:80%;
+  padding:10px;
+}
+
+#driver-dashboard .dashboard input:hover{
+  color: #4caf50;
+  font-weight:bold;
+}
+#driver-sign-in .driver button{
+  width:50%;
+  padding:10px;
+  margin-top: 20px;
+  margin-left: 130px;
+  font-weight: bold;
+}
+#driver-dashboard .dashboard button{
+  width:50%;
+  padding:5px;
+  margin-top: 15px;
+  margin-left: 130px;
+  font-weight: bold;
+}
+#driver-sign-in h2{
+  text-align: center;
+  padding:5px;
+}
+/* Driver dashboard h2, h3 */
+#driver-dashboard h2, #driver-dashboard h3 {
+  text-align: center;
+  padding:2px;
+}
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:5px;
+  margin-top:10px;
+  color:#ffffff;
+  background-color: #00a1f1;
+  text-align: center;
+
+}
+
+/* table styles */
+table {
+
+  color: #4a4a4d;
+  font: 10px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+th,
+td {
+  padding: 5px 5px;
+  vertical-align: middle;
+}
+thead {
+  background: #395870;
+  background: linear-gradient(#49708f, #293f50);
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+th:first-child {
+  border-top-left-radius: 1px;
+  text-align: left;
+}
+th:last-child {
+  border-top-right-radius: 1px;
+}
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
+td {
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+}
+td:first-child {
+  border-left: 1px solid #cecfd5;
+}
+.ride-no {
+  color: #395870;
+
+}
+.ride-date,
+.ride-from {
+  text-align: left;
+}
+.ride-to {
+  text-align: left;
+}
+.ride-destination {
+  text-align: left;
+}
+.ride-status {
+  text-align: left;
+}
+/* formatting table to the center */
+#rides-taken-dashboard table{
+  overflow: hidden;
+  margin-bottom: 5px;
+  width: 100%;
+}
+#rides-requests table{
+  overflow: hidden;
+  margin-bottom: 1px;
+  width: 100%;
+}
+
+#rides-given-dashboard table{
+  overflow: hidden;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+}
+#received-friends-requests table{
+  overflow: hidden;
+  margin-bottom: 5px;
+  float: left;
+}
+
+#rides-taken-dashboard h2, #rides-taken-dashboard h3 {
+  text-align: center;
+  padding:2px;
+}
+
+#rides-given-dashboard h2, #rides-given-dashboard h3 {
+  text-align: center;
+  padding:2px;
+}
+
+#rides-requests h2, #rides-requests h3 {
+  text-align: center;
+  padding:2px;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+  #driver-sign-in .driver button{
+  width:50%;
+  padding:10px;
+  margin-top: 20px;
+  margin-left: 70px;
+  font-weight: bold;
+}
+#driver-dashboard .dashboard button{
+  width:50%;
+  padding:5px;
+  margin-top: 15px;
+  margin-left: 70px;
+  font-weight: bold;
+}
+#showcase{
+  text-align:center;
+  color:#ffffff;
+  font-size: 10em;
+}
+#rides-taken-dashboard table{
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: block;
+}
+
+#rides-given-dashboard table{
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 80%;
+}
+#rides-taken-dashboard h2, #rides-taken-dashboard h3 {
+  text-align: center;
+  padding:2px;
+}
+
+#rides-given-dashboard h2, #rides-given-dashboard h3 {
+  text-align: center;
+  padding:2px;
+}
+
+}
